@@ -1,11 +1,20 @@
+year=int(input("Enter the Year"))
+
 print('\n\nJanuary')
 for date in range(31):
+    date+=1
     print(str(date)+" ",end='')
 #month=
 print('\n\nFeburary')
-for date in range(28):
-    date+=1
-    print(str(date)+" ",end='')
+if(year%4==0):
+    for date in range(29):
+        date+=1
+        print(str(date)+" ",end='')
+else:
+    for date in range(28):
+        date+=1
+        print(str(date)+" ",end='')
+
 #month=
 print('\n\nMarch')
 for date in range(31):

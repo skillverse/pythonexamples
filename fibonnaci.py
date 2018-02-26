@@ -1,4 +1,3 @@
-clear
 import sys
 def cube(n): #generator function
         if(n<0):

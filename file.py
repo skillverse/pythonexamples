@@ -1,0 +1,5 @@
+fo = open("foo.txt", "r") 
+print ("Writing Content to File :", fo.name) 
+print ("Opening mode : ", fo.mode) 
+fo.write("Hello I have Written this using a python program\n")
+fo.close()

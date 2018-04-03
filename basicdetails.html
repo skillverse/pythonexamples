@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>submit</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+        *{
+            margin:0px;
+            
+        }
+html{
+    background-color: lightgray;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    width: 50%;
+    background-color: white;
+
+}
+
+        input,form>p{
+            margin: 2%;
+            clear: both;
+            padding: 10px;
+            font-size: 1.3em;
+            align-content: right;
+        }
+
+        input[type="radio"]{
+            clear: both;
+        }
+
+        
+
+
+</style>
+
+
+    </head>
+    <body>
+<form method="POST" action="coursedetails.html">
+        <h2>Student Enquiry Form</h2><br>
+        <h2>Name</h2>
+        <input type="text" name="sname" placeholder="Your Name" id="username"> <br>
+        <h2>FatherName</h2>
+        <input type="text" name="fname" placeholder="Father Name" id="name">
+        <p>Are you a Student?</p>
+        <input type="radio" name="student" value="1" >Yes</input><br>
+        <input type="radio" name="student" value="0"  >No</input><br>
+        <h2>College Name</h2>
+        <input type="text" name="name" placeholder="Enter Your College" id=""><br>
+        <h2>Highest Qualification</h2>
+        <input type="file" name="name" placeholder="youranswer" id="qualifctn"> <br>
+        <input type="submit"  value="Submit" id="button">
+
+</form>    
+   </body>

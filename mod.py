@@ -1,14 +1,14 @@
 import mysql.connector
 config = {
-    'user': 'vms',
-    'password': 'giridher',
+    'user': 'mtcet',
+    'password': 'mtcet',
     'host': '127.0.0.1',
-    'port':'19000',
-    'database':'vms'      
+    'port':'3306',
+    'database':'mtcet'      
      }
 cnx=mysql.connector.connect(**config)
 curs=cnx.cursor(buffered=True)
-curs.execute("select * from users")
+curs.execute("select * from feedback")
 records=curs.fetchall()
 for data in records:
     print(data[2]," ",data[1])

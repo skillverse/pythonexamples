@@ -1,11 +1,5 @@
 fo = open("foo.txt", "r+") 
 sf=open("ex.py","r")
-print ("Writing Content to File :", fo.name) 
-print ("Opening mode : ", fo.mode) 
-content=sf.read(100)
-print(content)
-position=sf.tell()
-print("The cursor is at",position)
-fo.write("Hello I have Written this using a python program\n")
-print("Written the Text")
+while(content=sf.read(100)):
+    print(content)
 fo.close()
